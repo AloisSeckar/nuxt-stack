@@ -1,0 +1,37 @@
+/*! this file is auto-imported when using Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply bg-slate-900;
+    }
+
+    h1 {
+        @apply mb-4 text-4xl text-amber-400 font-bold;
+    }
+
+    div {
+        @apply m-auto text-center text-white;
+    }
+
+}
+
+@layer components {
+
+    .features-list {
+        @apply m-auto my-4 w-3/5 flex flex-col;
+    }
+
+    .features {
+        @apply m-1 p-2 border border-amber-300 font-bold text-xl text-feature hover:bg-slate-700;
+    }
+
+    .link {
+        @apply my-2 text-amber-400 hover:text-amber-200;
+    }
+
+}

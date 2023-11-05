@@ -1,0 +1,18 @@
+{
+    "title" : "Nuxt Stack",
+    "subtitle" : "A ready-to-use setup for your next application in Nuxt",
+    "page2" : "This is a second page of the application",
+    "goto1" : "Go back to index",
+    "goto2" : "Go to 2nd page",
+    "features" : {
+        "nuxt" : "Nuxt application framework atop Vue.js",
+        "vueuse" : "VueUse utils available",
+        "tailwind" : "Tailwind CSS for styling",
+        "image" : "NuxtImage to optimize use of images",
+        "i18n" : "I18n for translations",
+        "pinia" : "Pinia for state management",
+        "supabase" : "Supabase for auth and DB services",
+        "formkit" : "FormKit for input forms",
+        "icones" : "Icons as components with Icônes"
+    }
+}
