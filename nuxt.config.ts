@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/supabase',
@@ -28,8 +27,5 @@ export default defineNuxtConfig({
     public: {
       // client-exposed env-like variables goes here
     }
-  },
-  typescript: {
-    strict: true
   }
 })
