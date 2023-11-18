@@ -1,10 +1,11 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config
 export default defineNuxtConfig({
   modules: [
+    'nuxt-time',
+    '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
-    '@nuxt/image',
     '@vueuse/nuxt',
     '@formkit/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }]

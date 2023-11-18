@@ -3,17 +3,22 @@
     <h1>{{ $t("title") }}</h1>
     <div>{{ $t("subtitle") }}</div>
     <NuxtPage />
-    <ClientOnly>
-      <!-- TODO there is 1s difference between server and client - is there a way to fix this? -->
-      <p>
-        Current time by
-        <span class="link">
-          <NuxtLink to="https://vueuse.org/">VueUse</NuxtLink>
-        </span>
-        :
-        {{ currentDate }}
-      </p>
-    </ClientOnly>
+    <p>
+      Current time by
+      <span class="link">
+        <NuxtLink to="https://github.com/danielroe/nuxt-time">Nuxt Time</NuxtLink>
+      </span>
+      :
+      <NuxtTime
+        :datetime="currentDate"
+        year="numeric"
+        month="numeric"
+        day="numeric"
+        hour="numeric"
+        minute="numeric"
+        second="numeric"
+      />
+    </p>
     <div class="link text-xs">
       <NuxtLink to="https://github.com/AloisSeckar/nuxt-stack">
         https://github.com/AloisSeckar/nuxt-stack
@@ -30,7 +35,5 @@ useHead({
   }
 })
 
-const currentDate = computed(() => {
-  return useDateFormat(useNow(), 'HH:mm:ss DD.MM.YYYY').value.replace('"', '')
-})
+const currentDate = useNow()
 </script>
