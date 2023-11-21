@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "analyze": "nuxt analyze",
     "build": "npm install && nuxt build",
     "dev": "npm install && nuxt dev",
     "generate": "nuxt generate",
