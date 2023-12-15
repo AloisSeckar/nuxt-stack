@@ -1,4 +1,5 @@
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# https://github.blog/2023-08-24-a-faster-way-to-manage-version-updates-with-dependabot/
 
 version: 2
 updates:
@@ -9,4 +10,7 @@ updates:
       time: "05:10"
     commit-message:
       prefix: "npm"
-
+    groups:
+      all:
+        patterns:
+          - "*"
