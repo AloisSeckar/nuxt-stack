@@ -6,6 +6,7 @@
     "goto2" : "Go to 2nd page",
     "features" : {
         "nuxt" : "Nuxt application framework atop Vue.js",
+        "security" : "Nuxt Security module helping with OWASP patterns",
         "vueuse" : "VueUse utils available",
         "tailwind" : "Tailwind CSS for styling",
         "image" : "NuxtImage to optimize use of images",

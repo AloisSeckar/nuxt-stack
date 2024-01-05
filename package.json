@@ -22,6 +22,7 @@
     "eslint": "8.56.0",
     "nuxt": "3.9.0",
     "nuxt-time": "0.1.1",
+    "nuxt-security": "1.0.0",
     "pinia": "2.1.7",
     "tailwindcss": "3.4.0"
   }

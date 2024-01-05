@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
   modules: [
     'nuxt-time',
+    'nuxt-security',
     '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
-    '@vueuse/nuxt',
     '@formkit/nuxt',
-    ['@pinia/nuxt', { autoImports: ['defineStore'] }]
+    '@pinia/nuxt',
+    '@vueuse/nuxt'
   ],
   i18n: {
     // if required to modify i18n

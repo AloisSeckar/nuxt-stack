@@ -11,6 +11,7 @@
       <!-- an example of Nuxt components declared in `/components` directory -->
       <!-- the text is being loaded localized via nuxt/i18n module -->
       <AppFeature :text="useNuxtApp().$i18n.t('features.nuxt')" />
+      <AppFeature :text="useNuxtApp().$i18n.t('features.security')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.vueuse')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.tailwind')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.image')" />
