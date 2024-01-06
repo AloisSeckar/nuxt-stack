@@ -1,5 +1,7 @@
 {
   "private": true,
+  "name": "nuxt-stack",
+  "version": "1.0.0",
   "scripts": {
     "analyze": "nuxt analyze",
     "build": "npm install && nuxt build",
