@@ -27,5 +27,8 @@
     "nuxt-security": "1.0.0",
     "pinia": "2.1.7",
     "tailwindcss": "3.4.0"
+  },
+  "overrides" : {
+    "vite" : "^5.0.12"
   }
 }
