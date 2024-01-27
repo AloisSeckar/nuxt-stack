@@ -29,6 +29,8 @@
     "tailwindcss": "3.4.0"
   },
   "overrides" : {
-    "vite" : "^5.0.12"
+    "vite" : "^5.0.12",
+    "lodash.pick@>=3.7.0 <4.17.19": "https://github.com/lodash/lodash/archive/f299b52f39486275a9e6483b60a410e06520c538.tar.gz"
+  
   }
 }
