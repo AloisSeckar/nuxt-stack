@@ -4,9 +4,9 @@ export default defineNuxtConfig({
     'nuxt-time',
     'nuxt-security',
     '@nuxt/image',
+    '@nuxt/ui',
     '@nuxtjs/i18n',
     '@nuxtjs/supabase',
-    '@nuxtjs/tailwindcss',
     '@formkit/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt'

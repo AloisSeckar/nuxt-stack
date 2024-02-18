@@ -7,9 +7,11 @@
     "features" : {
         "nuxt" : "Nuxt application framework atop Vue.js",
         "security" : "Nuxt Security module helping with OWASP patterns",
-        "vueuse" : "VueUse utils available",
+        "ui" : "Nuxt UI as UI components library",
         "tailwind" : "Tailwind CSS for styling",
+        "icon" : "Icon module for displaying icons",
         "image" : "NuxtImage to optimize use of images",
+        "vueuse" : "VueUse utils available",
         "i18n" : "I18n for translations",
         "pinia" : "Pinia for state management",
         "supabase" : "Supabase for auth and DB services",

@@ -17,7 +17,8 @@
     <!-- "double mustache" syntax to display JS expression inside HTML template -->
     <!-- notice you can call props directly in template section -->
     {{ text }}
-    <AppIconSmiley />
+    <!-- icons provided by "nuxt-icon" module auto-imported via "@nuxt/ui" -->
+    <Icon name="ic:sharp-add-reaction" color="yellow" />
   </div>
 </template>
 

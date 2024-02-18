@@ -27,7 +27,7 @@
     }
 
     .features {
-        @apply m-1 p-2 border border-amber-300 font-bold text-xl text-feature hover:bg-slate-700;
+        @apply m-1 px-2 py-1 border border-amber-300 font-bold text-lg text-feature hover:bg-slate-700;
     }
 
     .link {

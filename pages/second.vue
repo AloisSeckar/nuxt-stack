@@ -13,7 +13,7 @@
       <!-- special component for displaying images with NuxtImage -->
       <NuxtImg src="/unsplash.jpg" width="400" />
       <div class="text-xs">
-        Image by Unsplash
+        Image by Unsplash displayed with <strong>Nuxt Image</strong>
       </div>
     </div>
     <div class="link">
