@@ -31,8 +31,8 @@
 useHead({
   title: useAppConfig().textTitle,
   htmlAttrs: {
-    lang: 'en'
-  }
+    lang: 'en',
+  },
 })
 
 const currentDate = useNow()

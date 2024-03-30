@@ -30,7 +30,7 @@
 // default - will have this value, unless overwritten by caller
 const props = defineProps({
   text: { type: String, required: true },
-  optionalText: { type: String, default: 'default' }
+  optionalText: { type: String, default: 'default' },
 })
 
 // in setup section, you have to adress properties like this

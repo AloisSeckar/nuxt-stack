@@ -13,7 +13,7 @@ I will also try to include **WHAT** and **WHY** comments.
 - Supabase for auth and DB services
 - FormKit for input forms
 - Icônes for providing SVG icons
-- ESLint for automatic code quality check
+- ESLint via @nuxt/eslint for automatic code quality check
 
 ### How to use
 1. `git checkout nuxt-stack project`)

@@ -10,12 +10,12 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase',
     '@formkit/nuxt',
     '@pinia/nuxt',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   eslint: {
     config: {
-      stylistic: true
-    }
+      stylistic: true,
+    },
   },
   i18n: {
     // if required to modify i18n

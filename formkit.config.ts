@@ -5,7 +5,7 @@ import type { DefaultConfigOptions } from '@formkit/vue'
 const config: DefaultConfigOptions = {
   // example of importing different message translations and set the default one
   locales: { en, de },
-  locale: 'en'
+  locale: 'en',
 }
 
 export default config

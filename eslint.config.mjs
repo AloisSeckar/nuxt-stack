@@ -7,6 +7,16 @@ export default withNuxt({
   // it is not recommended to do so though
 
   rules: {
-  }
+    // default for this rule is "1", but I find it too restrictive
+    // https://eslint.vuejs.org/rules/max-attributes-per-line.html
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 4,
+      },
+      multiline: {
+        max: 3,
+      },
+    }],
+  },
 
 })

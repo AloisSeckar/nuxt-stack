@@ -1,3 +1,3 @@
 export default defineAppConfig({
-  textTitle: 'Nuxt Demos - Nuxt Stack'
+  textTitle: 'Nuxt Demos - Nuxt Stack',
 })
