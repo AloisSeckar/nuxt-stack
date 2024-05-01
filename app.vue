@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="p-3">
     <h1>{{ $t("title") }}</h1>
     <div>{{ $t("subtitle") }}</div>
     <NuxtPage />
