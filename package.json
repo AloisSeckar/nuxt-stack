@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "analyze": "nuxt analyze",
-    "build": "npm install && nuxt build",
-    "dev": "npm install && nuxt dev",
-    "generate": "nuxt generate",
+    "eslint": "eslint .",
+    "build": "npm install && npm run eslint && nuxt build",
+    "dev": "npm install && npm run eslint && nuxt dev",
+    "generate": "npm install && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "nuxt start"
