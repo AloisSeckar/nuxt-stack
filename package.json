@@ -5,9 +5,9 @@
   "scripts": {
     "analyze": "nuxt analyze",
     "eslint": "eslint .",
-    "build": "npm install && npm run eslint && nuxt build",
-    "dev": "npm install && npm run eslint && nuxt dev",
-    "generate": "npm install && nuxt generate",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "nuxt start"
