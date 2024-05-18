@@ -3,22 +3,7 @@
     <h1>{{ $t("title") }}</h1>
     <div>{{ $t("subtitle") }}</div>
     <NuxtPage />
-    <p>
-      Current time by
-      <span class="link">
-        <NuxtLink to="https://github.com/danielroe/nuxt-time">Nuxt Time</NuxtLink>
-      </span>
-      :
-      <NuxtTime
-        :datetime="currentDate"
-        year="numeric"
-        month="numeric"
-        day="numeric"
-        hour="numeric"
-        minute="numeric"
-        second="numeric"
-      />
-    </p>
+    <CurrentTime />
     <div class="link text-xs">
       <NuxtLink to="https://github.com/AloisSeckar/nuxt-stack">
         https://github.com/AloisSeckar/nuxt-stack
@@ -34,6 +19,4 @@ useHead({
     lang: 'en',
   },
 })
-
-const currentDate = useNow()
 </script>
