@@ -18,7 +18,7 @@
     <!-- notice you can call props directly in template section -->
     {{ text }}
     <!-- icons provided by "nuxt-icon" module auto-imported via "@nuxt/ui" -->
-    <Icon name="ic:sharp-add-reaction" color="yellow" />
+    <Icon name="ic:sharp-add-reaction" style="color: yellow" />
   </div>
 </template>
 
