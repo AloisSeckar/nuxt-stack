@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-07-04',
+  compatibilityDate: '2024-08-01',
   modules: [
     'nuxt-time',
     'nuxt-security',
