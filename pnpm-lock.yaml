@@ -969,8 +969,8 @@ packages:
       vite-plugin-eslint2:
         optional: true
 
-  '@nuxt/icon@1.4.4':
-    resolution: {integrity: sha512-XjpW6dO98y+7sxyhhAeka96cFdbThWEr6tgazVQ2d/RRgg9/9aYctcxo4GCoSD6APXf0k9gQE7WtiIIUKrjr3Q==}
+  '@nuxt/icon@1.4.5':
+    resolution: {integrity: sha512-h0Fe1VhpVB5bcQutsH37G46DyE2u+j5j7+0sFbxT2ovRm+uILqo5ONXWe4WuJ20AtngvdpqvnqT25ZQtzx4K9A==}
 
   '@nuxt/image@1.7.0':
     resolution: {integrity: sha512-zSj32bLgbV9AvLkLX0pF52J5KBfSyj0eSIdpXCtTJATSZlqgcJigoCvmabC1nbcMIp0SZ29Bu9+acQpGTQKz+g==}
@@ -5751,7 +5751,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@nuxt/icon@1.4.4(magicast@0.3.4)(rollup@4.19.2)(vite@5.3.5(@types/node@22.1.0)(terser@5.31.3))(vue@3.4.35(typescript@5.5.4))':
+  '@nuxt/icon@1.4.5(magicast@0.3.4)(rollup@4.19.2)(vite@5.3.5(@types/node@22.1.0)(terser@5.31.3))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@iconify/collections': 1.0.445
       '@iconify/types': 2.0.0
@@ -5878,7 +5878,7 @@ snapshots:
       '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.7)
       '@headlessui/vue': 1.7.22(vue@3.4.35(typescript@5.5.4))
       '@iconify-json/heroicons': 1.1.23
-      '@nuxt/icon': 1.4.4(magicast@0.3.4)(rollup@4.19.2)(vite@5.3.5(@types/node@22.1.0)(terser@5.31.3))(vue@3.4.35(typescript@5.5.4))
+      '@nuxt/icon': 1.4.5(magicast@0.3.4)(rollup@4.19.2)(vite@5.3.5(@types/node@22.1.0)(terser@5.31.3))(vue@3.4.35(typescript@5.5.4))
       '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.19.2)
       '@nuxtjs/color-mode': 3.4.2(magicast@0.3.4)(rollup@4.19.2)
       '@nuxtjs/tailwindcss': 6.12.1(magicast@0.3.4)(rollup@4.19.2)
