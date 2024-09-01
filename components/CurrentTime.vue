@@ -3,8 +3,7 @@
     Current time by
     <span class="link">
       <NuxtLink to="https://github.com/danielroe/nuxt-time">Nuxt Time</NuxtLink>
-    </span>
-    :
+    </span>:
     <NuxtTime
       :datetime="currentDate"
       year="numeric"

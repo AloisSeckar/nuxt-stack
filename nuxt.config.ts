@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-08-01',
+  compatibilityDate: '2024-09-01',
   modules: [
     'nuxt-time',
     'nuxt-security',
@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   eslint: {
+    // simple eslint config - see eslint.config.mjs
     config: {
       stylistic: true,
     },

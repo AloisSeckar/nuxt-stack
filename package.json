@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "nuxt-stack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "analyze": "nuxt analyze",
     "eslint": "eslint .",
@@ -9,12 +9,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "start": "nuxt start"
   },
   "devDependencies": {
     "@formkit/nuxt": "1.6.5",
-    "@nuxt/eslint": "0.5.4",
+    "@nuxt/eslint": "0.5.5",
     "@nuxt/image": "1.8.0",
     "@nuxt/ui": "2.18.4",
     "@nuxtjs/i18n": "8.5.1",
@@ -24,7 +23,8 @@
     "@vueuse/nuxt": "11.0.3",
     "nuxt": "3.13.0",
     "nuxt-time": "0.1.3",
-    "nuxt-security": "1.4.3",
-    "pinia": "2.2.2"
+    "nuxt-security": "2.0.0-rc.9",
+    "pinia": "2.2.2",
+    "typescript": "5.5.4"
   }
 }
