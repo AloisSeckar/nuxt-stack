@@ -9,19 +9,27 @@ export function setModules() {
   moduleConfig.modules.push(
     'nuxt-time',
     'nuxt-security',
+    '@nuxtjs/i18n',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxtjs/i18n',
-    '@formkit/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt',
   )
 
   // 2. optional modules
 
+  // ui
+  if (process.env.NUXT_PUBLIC_MODULES_UI === 'true') {
+    moduleConfig.modules.push('@nuxt/ui')
+  }
+
+  // formkit
+  if (process.env.NUXT_PUBLIC_MODULES_FORMKIT === 'true') {
+    moduleConfig.modules.push('@formkit/nuxt')
+  }
+
   // supabase
-  if (process.env.NUXT_PUBLIC_MODULES_SUPABASE) {
+  if (process.env.NUXT_PUBLIC_MODULES_SUPABASE === 'true') {
     // module definition
     moduleConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
