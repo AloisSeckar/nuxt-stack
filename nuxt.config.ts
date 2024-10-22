@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       // client-exposed env-like variables goes here
     },
   },
-  compatibilityDate: '2024-09-01',
+  compatibilityDate: '2024-10-22',
   eslint: {
     // simple eslint config - see eslint.config.mjs
     config: {
