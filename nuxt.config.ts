@@ -18,17 +18,4 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  i18n: {
-    // if required to modify i18n
-  },
-  image: {
-    // if required to modify nuxt/image
-    presets: {
-      // for custom presets
-    },
-  },
-  supabase: {
-    // if required to modify supabase
-    redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
-  },
 })
