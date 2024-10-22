@@ -19,7 +19,8 @@ export function setModules() {
     modules.push('@nuxtjs/supabase')
   }
 
-  console.log(modules)
+  console.log('Nuxt Stack initializing with following modules:')
+  console.log(...modules)
 
   return modules
 }
