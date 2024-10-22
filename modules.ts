@@ -1,8 +1,12 @@
+import { defu } from 'defu'
+
 export function setModules() {
-  const modules = []
+  let moduleConfig = {
+    modules: [] as string[],
+  }
 
   // 1. default modules
-  modules.push(
+  moduleConfig.modules.push(
     'nuxt-time',
     'nuxt-security',
     '@nuxt/eslint',
@@ -15,12 +19,21 @@ export function setModules() {
   )
 
   // 2. optional modules
+
+  // supabase
   if (process.env.NUXT_PUBLIC_MODULES_SUPABASE) {
-    modules.push('@nuxtjs/supabase')
+    // module definition
+    moduleConfig.modules.push('@nuxtjs/supabase')
+    // module-specific config key
+    moduleConfig = defu({
+      supabase: {
+        redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
+      },
+    }, moduleConfig)
   }
 
-  console.log('Nuxt Stack initializing with following modules:')
-  console.log(...modules)
+  console.log('Nuxt Stack will start using following module config:')
+  console.log(moduleConfig)
 
-  return modules
+  return moduleConfig
 }

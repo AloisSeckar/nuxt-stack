@@ -1,10 +1,9 @@
+import { defu } from 'defu'
 import { setModules } from './modules'
 
-const nuxtStackModules = setModules()
+const nuxtModules = setModules()
 
-// https://nuxt.com/docs/guide/directory-structure/nuxt.config
-export default defineNuxtConfig({
-  modules: [...nuxtStackModules],
+const nuxtConfig = defu(nuxtModules, {
   runtimeConfig: {
     // nitro-only secret env-like variables goes here
     public: {
@@ -19,3 +18,10 @@ export default defineNuxtConfig({
     },
   },
 })
+
+console.log(nuxtConfig)
+
+// https://nuxt.com/docs/guide/directory-structure/nuxt.config
+// @ts-expect-error unknown object type
+// TODO elaborate correct type for "nuxtConfig" object
+export default defineNuxtConfig(nuxtConfig)
