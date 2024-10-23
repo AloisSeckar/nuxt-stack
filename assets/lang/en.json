@@ -16,6 +16,7 @@
         "pinia" : "Pinia for state management",
         "supabase" : "Supabase for auth and DB services",
         "formkit" : "FormKit for input forms",
-        "icones" : "Icons as components with Icônes"
+        "icones" : "Icons as components with Icônes",
+        "consola" : "Logging with unjs/consola"
     }
 }

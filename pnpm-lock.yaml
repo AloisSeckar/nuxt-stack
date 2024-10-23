@@ -38,6 +38,9 @@ importers:
       '@vueuse/nuxt':
         specifier: 11.1.0
         version: 11.1.0(magicast@0.3.5)(nuxt@3.13.2(@parcel/watcher@2.4.1)(@types/node@22.7.8)(eslint@9.13.0(jiti@2.3.3))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.9(@types/node@22.7.8)(terser@5.36.0)))(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))
+      consola:
+        specifier: 3.2.3
+        version: 3.2.3
       defu:
         specifier: 6.1.4
         version: 6.1.4

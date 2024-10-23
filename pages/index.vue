@@ -16,6 +16,7 @@
       <AppFeature :text="useNuxtApp().$i18n.t('features.pinia')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.vueuse')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.i18n')" />
+      <AppFeature :text="useNuxtApp().$i18n.t('features.consola')" />
       <AppFeature v-if="modules.ui" :text="useNuxtApp().$i18n.t('features.ui')" />
       <AppFeature v-if="modules.ui" :text="useNuxtApp().$i18n.t('features.tailwind')" />
       <AppFeature v-if="modules.ui" :text="useNuxtApp().$i18n.t('features.icon')" />

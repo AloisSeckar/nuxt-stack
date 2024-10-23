@@ -24,6 +24,9 @@ const nuxtConfig = defu(nuxtModules, {
         formkit: false,
         supabase: false,
       },
+
+      // logging
+      logLevel: 'info',
     },
   },
 })

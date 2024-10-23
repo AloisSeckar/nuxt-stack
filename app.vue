@@ -19,4 +19,6 @@ useHead({
     lang: 'en',
   },
 })
+initConsola()
+log.info('Hello, world!')
 </script>

@@ -1,4 +1,5 @@
 import { defu } from 'defu'
+import { log } from './utils/consola'
 
 export function setModules() {
   let moduleConfig = {
@@ -40,8 +41,8 @@ export function setModules() {
     }, moduleConfig)
   }
 
-  console.log('Nuxt Stack will start using following module config:')
-  console.log(moduleConfig)
+  log.info('Nuxt Stack will start using following module config:')
+  log.info(moduleConfig)
 
   return moduleConfig
 }
