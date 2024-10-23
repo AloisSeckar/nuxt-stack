@@ -7,16 +7,15 @@
     "features" : {
         "nuxt" : "Nuxt application framework atop Vue.js",
         "security" : "Nuxt Security module helping with OWASP patterns",
+        "image" : "NuxtImage to optimize use of images",
+        "pinia" : "Pinia for state management",
+        "vueuse" : "VueUse utils available",
+        "i18n" : "I18n for translations",
+        "consola" : "Logging with unjs/consola",
         "ui" : "Nuxt UI as UI components library",
         "tailwind" : "Tailwind CSS for styling",
         "icon" : "Icon module for displaying icons",
-        "image" : "NuxtImage to optimize use of images",
-        "vueuse" : "VueUse utils available",
-        "i18n" : "I18n for translations",
-        "pinia" : "Pinia for state management",
-        "supabase" : "Supabase for auth and DB services",
         "formkit" : "FormKit for input forms",
-        "icones" : "Icons as components with Icônes",
-        "consola" : "Logging with unjs/consola"
+        "supabase" : "Supabase for auth and DB services"
     }
 }
