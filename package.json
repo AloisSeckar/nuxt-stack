@@ -1,7 +1,10 @@
 {
-  "private": true,
   "name": "nuxt-stack",
-  "version": "1.1.0",
+  "version": "0.1.0",
+  "description": "Enhanced and customizable Nuxt application starter pack",
+  "repository": "github:AloisSeckar/nuxt-stack",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "analyze": "nuxt analyze",
     "eslint": "eslint .",

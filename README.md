@@ -25,5 +25,11 @@ I will also try to include **WHAT** and **WHY** comments.
 
 You are ready to build your next awesome project in Nuxt.
 
+### As a layer
+
+Aside from being "forked", `nuxt-stack` is also available as a NPM package that can be referenced as a single-import dependency with all the features incomming.
+
+More info comming soon...
+
 ### Related article
 https://master-coda.netlify.app/article/nuxt-stack
