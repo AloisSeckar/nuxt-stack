@@ -18,7 +18,9 @@
     <!-- notice you can call props directly in template section -->
     {{ text }}
     <!-- icons provided by "nuxt-icon" module auto-imported via "@nuxt/ui" -->
-    <Icon name="ic:sharp-add-reaction" style="color: yellow" />
+    <div v-if="showIcon">
+      <Icon name="ic:sharp-add-reaction" style="color: yellow" />
+    </div>
   </div>
 </template>
 
@@ -32,6 +34,8 @@ const props = defineProps({
   text: { type: String, required: true },
   optionalText: { type: String, default: 'default' },
 })
+
+const showIcon = useRuntimeConfig().public.modules.ui
 
 // in setup section, you have to adress properties like this
 // you cannot reach them directly unlike in template

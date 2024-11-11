@@ -23,6 +23,17 @@ export function setModules() {
   if (process.env.NUXT_PUBLIC_MODULES_UI === 'true') {
     moduleConfig.modules.push('@nuxt/ui')
   }
+  else {
+    // remove @nuxt/ui-specific components from resolution
+    // if module is not used
+    moduleConfig = defu({
+      vue: {
+        compilerOptions: {
+          isCustomElement: (tag: string) => tag === 'Icon',
+        },
+      },
+    }, moduleConfig)
+  }
 
   // formkit
   if (process.env.NUXT_PUBLIC_MODULES_FORMKIT === 'true') {
