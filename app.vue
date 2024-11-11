@@ -5,8 +5,8 @@
     <NuxtPage />
     <CurrentTime />
     <div class="link text-xs">
-      <NuxtLink to="https://github.com/AloisSeckar/nuxt-stack">
-        https://github.com/AloisSeckar/nuxt-stack
+      <NuxtLink to="https://github.com/AloisSeckar/nuxt-ignis">
+        https://github.com/AloisSeckar/nuxt-ignis
       </NuxtLink>
     </div>
   </div>
@@ -20,5 +20,5 @@ useHead({
   },
 })
 initConsola()
-log.info('Hello, world!')
+log.info('Nuxt Ignis was here!')
 </script>

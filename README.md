@@ -1,4 +1,4 @@
-# Nuxt Stack
+# Nuxt Ignis
 This is a template starter for Nuxt web applicatons. It is being build as the setup I'd currently use to start with a new "real world" [Nuxt](https://nuxt.com/) webapp. It will improve and grow together with my skills. I also try to include **WHAT** and **WHY** comments based on my knowledge about the framework and used libraries.
 
 ## Features
@@ -18,7 +18,7 @@ This is a template starter for Nuxt web applicatons. It is being build as the se
 ## How to use
 
 ### As standalone template
-1. Do a `git checkout` from https://github.com/AloisSeckar/nuxt-stack.git
+1. Do a `git checkout` from https://github.com/AloisSeckar/nuxt-ignis.git
 2. Open in IDE and run `pnpm install` in terminal
 3. Configure modules via `.env` properties
 4. Start dev server with `pnpm dev` command
@@ -27,7 +27,7 @@ This is a template starter for Nuxt web applicatons. It is being build as the se
 You are ready to build your next awesome project in Nuxt.
 
 ### As a layer
-Aside from being "forked", `nuxt-stack` is also available as a NPM package that can be referenced as a single-import dependency with all the features incomming.
+Aside from being "forked", `nuxt-ignis` is also available as a NPM package that can be referenced as a single-import dependency with all the features incomming.
 
 More info comming soon...
 

@@ -4,7 +4,7 @@ import { setModules } from './modules'
 const nuxtModules = setModules()
 
 const nuxtConfig = defu(nuxtModules, {
-  compatibilityDate: '2024-10-22',
+  compatibilityDate: '2024-11-11',
   eslint: {
     // simple eslint config - see eslint.config.mjs
     config: {

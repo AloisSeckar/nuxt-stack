@@ -41,7 +41,7 @@ export function setModules() {
     }, moduleConfig)
   }
 
-  log.info('Nuxt Stack will start using following module config:')
+  log.info('Nuxt Ignis will start using following module config:')
   log.info(moduleConfig)
 
   return moduleConfig
