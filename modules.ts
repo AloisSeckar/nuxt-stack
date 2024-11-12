@@ -33,6 +33,11 @@ export function setModules() {
         },
       },
     }, moduleConfig)
+
+    // evaluate separate Tailwind CSS module
+    if (process.env.NUXT_PUBLIC_MODULES_TAILWIND === 'true') {
+      moduleConfig.modules.push('@nuxtjs/tailwindcss')
+    }
   }
 
   // formkit

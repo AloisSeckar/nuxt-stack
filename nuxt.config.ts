@@ -21,6 +21,7 @@ const nuxtConfig = defu(nuxtModules, {
       // opt-ins for module MUST BE provided via .env file (or production equivalent)
       modules: {
         ui: false,
+        tailwind: false,
         formkit: false,
         supabase: false,
       },

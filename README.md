@@ -39,5 +39,6 @@ It is possible to select which Nuxt modules will be activated in your project. F
 
 Currently, following modules are opinionated:
 - `@nuxt/ui`
+- `@nuxtjs/tailwindcss` (option ignored if `@nuxt/ui` is selected)
 - `@formkit/nuxt`
 - `@nuxtjs/supabase`
