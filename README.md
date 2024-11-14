@@ -32,7 +32,7 @@ Aside from being "forked", `nuxt-ignis` is also available as a NPM package that 
 More info comming soon...
 
 ## Related article
-https://master-coda.netlify.app/article/nuxt-stack
+https://master-coda.cz/article/nuxt-stack
 
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. For example, if you don't need database connectivity, you don't need to include `supabase` - and be forced to setup connection.
