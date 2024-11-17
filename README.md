@@ -58,4 +58,7 @@ Set the value via `NUXT_PUBLIC_IGNIS_DATABASE` env variable.
 
 ### Optional modules
 Currently, following modules are opinionated:
-- `@formkit/nuxt`
+- `@formkit/nuxt` - set `NUXT_PUBLIC_MODULES_FORMKIT` to `true | false`
+- `@nuxt/content` - set `NUXT_PUBLIC_MODULES_CONTENT` to `true | false`
+
+Default values are **false** (not included) for all optional modules.

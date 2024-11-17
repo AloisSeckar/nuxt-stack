@@ -40,11 +40,6 @@ export function setModules() {
     }
   }
 
-  // formkit
-  if (process.env.NUXT_PUBLIC_MODULES_FORMKIT === 'true') {
-    moduleConfig.modules.push('@formkit/nuxt')
-  }
-
   // database
   if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'supabase') {
     // module definition
@@ -58,6 +53,16 @@ export function setModules() {
   } else if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'neon') {
     // module definition
     moduleConfig.modules.push('nuxt-neon')
+  }
+
+  // formkit
+  if (process.env.NUXT_PUBLIC_MODULES_FORMKIT === 'true') {
+    moduleConfig.modules.push('@formkit/nuxt')
+  }
+
+  // content
+  if (process.env.NUXT_PUBLIC_MODULES_CONTENT === 'true') {
+    moduleConfig.modules.push('@nuxt/content')
   }
 
   log.info('Nuxt Ignis will start using following module config:')

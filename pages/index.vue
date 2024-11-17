@@ -20,9 +20,10 @@
       <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.ui')" />
       <AppFeature v-if="ui !== 'off'" :text="useNuxtApp().$i18n.t('features.tailwind')" />
       <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.icon')" />
-      <AppFeature v-if="modules.formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
       <AppFeature v-if="database === 'supabase'" :text="useNuxtApp().$i18n.t('features.supabase')" />
       <AppFeature v-if="database === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
+      <AppFeature v-if="modules.formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
+      <AppFeature v-if="modules.content" :text="useNuxtApp().$i18n.t('features.content')" />
     </div>
     <div class="link">
       <NuxtLink to="/second">
