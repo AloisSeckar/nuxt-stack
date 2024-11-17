@@ -18,7 +18,7 @@
     <!-- notice you can call props directly in template section -->
     {{ text }}
     <!-- icons provided by "nuxt-icon" module auto-imported via "@nuxt/ui" -->
-    <div v-if="showIcon">
+    <div v-if="showIcon" style="display: inline;">
       <Icon name="ic:sharp-add-reaction" style="color: yellow" />
     </div>
   </div>
