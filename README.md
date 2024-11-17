@@ -13,7 +13,7 @@ This is a template starter for Nuxt web applicatons. It is being build as the se
 - NuxtImage to optimize use of images
 - nuxt/i18n for localization
 - Pinia for state management
-- Supabase for auth and DB services
+- Supabase or Neon DB services
 - FormKit for input forms
 - Icônes for providing SVG icons
 - ESLint via @nuxt/eslint for automatic code quality check
@@ -38,10 +38,18 @@ More info comming soon...
 https://master-coda.cz/article/nuxt-stack
 
 ## Configuration
-It is possible to select which Nuxt modules will be activated in your project. For example, if you don't need database connectivity, you don't need to include `supabase` - and be forced to setup connection.
+It is possible to select which Nuxt modules will be activated in your project. For example, if you don't need database connectivity, you don't need to include a DB module and be forced to setup connection.
 
+### Optional modules
 Currently, following modules are opinionated:
 - `@nuxt/ui`
 - `@nuxtjs/tailwindcss` (option ignored if `@nuxt/ui` is selected)
 - `@formkit/nuxt`
-- `@nuxtjs/supabase`
+
+### Database
+It is possible to pick from three options:
+- `neon` - https://neon.tech/ via `nuxt-neon` connector module **[DEFAULT]**
+- `supabase` - https://supabase.com/ via `@nuxtjs/supabase` connector module
+- `off` - no database module
+
+Set the value via `NUXT_PUBLIC_IGNIS_DATABASE` env variable.

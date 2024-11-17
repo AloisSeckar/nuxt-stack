@@ -23,7 +23,10 @@ const nuxtConfig = defu(nuxtModules, {
         ui: false,
         tailwind: false,
         formkit: false,
-        supabase: false,
+      },
+
+      ignis: {
+        database: 'neon',
       },
 
       // logging

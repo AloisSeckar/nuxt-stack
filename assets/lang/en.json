@@ -16,6 +16,7 @@
         "tailwind" : "Tailwind CSS for styling",
         "icon" : "Icon module for displaying icons",
         "formkit" : "FormKit for input forms",
-        "supabase" : "Supabase for auth and DB services"
+        "supabase" : "Supabase for auth and DB services",
+        "neon" : "Neon for DB services"
     }
 }

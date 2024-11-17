@@ -1,0 +1,1 @@
+export type DBOptions = 'neon' | 'supabase' | 'off'

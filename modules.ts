@@ -45,8 +45,8 @@ export function setModules() {
     moduleConfig.modules.push('@formkit/nuxt')
   }
 
-  // supabase
-  if (process.env.NUXT_PUBLIC_MODULES_SUPABASE === 'true') {
+  // database
+  if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'supabase') {
     // module definition
     moduleConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
@@ -55,6 +55,9 @@ export function setModules() {
         redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
       },
     }, moduleConfig)
+  } else if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'neon') {
+    // module definition
+    moduleConfig.modules.push('nuxt-neon')
   }
 
   log.info('Nuxt Ignis will start using following module config:')
