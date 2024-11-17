@@ -20,12 +20,11 @@ const nuxtConfig = defu(nuxtModules, {
       // NOTE: due to static-like nature of nuxt.config.ts file
       // opt-ins for module MUST BE provided via .env file (or production equivalent)
       modules: {
-        ui: false,
-        tailwind: false,
         formkit: false,
       },
 
       ignis: {
+        ui: 'nuxt-ui',
         database: 'neon',
       },
 

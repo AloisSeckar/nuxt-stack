@@ -35,7 +35,7 @@ const props = defineProps({
   optionalText: { type: String, default: 'default' },
 })
 
-const showIcon = useRuntimeConfig().public.modules.ui
+const showIcon = useRuntimeConfig().public.ignis.ui === 'nuxt-ui'
 
 // in setup section, you have to adress properties like this
 // you cannot reach them directly unlike in template

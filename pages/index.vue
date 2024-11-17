@@ -17,9 +17,9 @@
       <AppFeature :text="useNuxtApp().$i18n.t('features.vueuse')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.i18n')" />
       <AppFeature :text="useNuxtApp().$i18n.t('features.consola')" />
-      <AppFeature v-if="modules.ui" :text="useNuxtApp().$i18n.t('features.ui')" />
-      <AppFeature v-if="modules.ui || modules.tailwind" :text="useNuxtApp().$i18n.t('features.tailwind')" />
-      <AppFeature v-if="modules.ui" :text="useNuxtApp().$i18n.t('features.icon')" />
+      <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.ui')" />
+      <AppFeature v-if="ui !== 'off'" :text="useNuxtApp().$i18n.t('features.tailwind')" />
+      <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.icon')" />
       <AppFeature v-if="modules.formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
       <AppFeature v-if="database === 'supabase'" :text="useNuxtApp().$i18n.t('features.supabase')" />
       <AppFeature v-if="database === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
@@ -34,5 +34,6 @@
 
 <script setup lang="ts">
 const modules = useRuntimeConfig().public.modules
+const ui = useRuntimeConfig().public.ignis.ui
 const database = useRuntimeConfig().public.ignis.database
 </script>

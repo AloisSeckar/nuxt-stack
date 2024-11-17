@@ -20,7 +20,7 @@ export function setModules() {
   // 2. optional modules
 
   // ui
-  if (process.env.NUXT_PUBLIC_MODULES_UI === 'true') {
+  if (process.env.NUXT_PUBLIC_IGNIS_UI === 'nuxt-ui') {
     moduleConfig.modules.push('@nuxt/ui')
   }
   else {
@@ -35,7 +35,7 @@ export function setModules() {
     }, moduleConfig)
 
     // evaluate separate Tailwind CSS module
-    if (process.env.NUXT_PUBLIC_MODULES_TAILWIND === 'true') {
+    if (process.env.NUXT_PUBLIC_IGNIS_UI === 'tailwind') {
       moduleConfig.modules.push('@nuxtjs/tailwindcss')
     }
   }

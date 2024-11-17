@@ -40,11 +40,13 @@ https://master-coda.cz/article/nuxt-stack
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. For example, if you don't need database connectivity, you don't need to include a DB module and be forced to setup connection.
 
-### Optional modules
-Currently, following modules are opinionated:
-- `@nuxt/ui`
-- `@nuxtjs/tailwindcss` (option ignored if `@nuxt/ui` is selected)
-- `@formkit/nuxt`
+### UI
+It is possible to pick from three options:
+- `nuxt-ui` - full https://ui.nuxt.com/ via `@nuxt/ui` connector module **[DEFAULT]**
+- `tailwind` - only https://tailwindcss.com/ via `@nuxtjs/tailwindcss` connector module
+- `off` - no UI library
+
+Set the value via `NUXT_PUBLIC_IGNIS_UI` env variable.
 
 ### Database
 It is possible to pick from three options:
@@ -53,3 +55,7 @@ It is possible to pick from three options:
 - `off` - no database module
 
 Set the value via `NUXT_PUBLIC_IGNIS_DATABASE` env variable.
+
+### Optional modules
+Currently, following modules are opinionated:
+- `@formkit/nuxt`
