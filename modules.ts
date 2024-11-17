@@ -41,7 +41,7 @@ export function setModules() {
   }
 
   // database
-  if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'supabase') {
+  if (process.env.NUXT_PUBLIC_IGNIS_DB === 'supabase') {
     // module definition
     moduleConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
@@ -50,18 +50,18 @@ export function setModules() {
         redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
       },
     }, moduleConfig)
-  } else if (process.env.NUXT_PUBLIC_IGNIS_DATABASE === 'neon') {
+  } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
     // module definition
     moduleConfig.modules.push('nuxt-neon')
   }
 
   // formkit
-  if (process.env.NUXT_PUBLIC_MODULES_FORMKIT === 'true') {
+  if (process.env.NUXT_PUBLIC_IGNIS_FORMKIT === 'true') {
     moduleConfig.modules.push('@formkit/nuxt')
   }
 
   // content
-  if (process.env.NUXT_PUBLIC_MODULES_CONTENT === 'true') {
+  if (process.env.NUXT_PUBLIC_IGNIS_CONTENT === 'true') {
     moduleConfig.modules.push('@nuxt/content')
   }
 

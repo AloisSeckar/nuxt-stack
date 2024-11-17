@@ -12,21 +12,18 @@ const nuxtConfig = defu(nuxtModules, {
     },
   },
   runtimeConfig: {
-    // nitro-only secret env-like variables goes here
+    // nitro-only secret env-like variables go here
     public: {
-      // client-exposed env-like variables goes here
+      // client-exposed env-like variables go here
 
-      // availability for modules
+      // features
       // NOTE: due to static-like nature of nuxt.config.ts file
-      // opt-ins for module MUST BE provided via .env file (or production equivalent)
-      modules: {
-        formkit: false,
-        content: false,
-      },
-
+      // actual values MUST BE provided via .env file (or production equivalent)
       ignis: {
-        ui: 'nuxt-ui',
-        database: 'neon',
+        ui: 'off', // nuxt-ui/tailwind/off
+        db: 'off', // neon/supabase/off
+        formkit: false, // true/false
+        content: false, // true/false
       },
 
       // logging

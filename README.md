@@ -42,23 +42,23 @@ It is possible to select which Nuxt modules will be activated in your project. F
 
 ### UI
 It is possible to pick from three options:
-- `nuxt-ui` - full https://ui.nuxt.com/ via `@nuxt/ui` connector module **[DEFAULT]**
+- `nuxt-ui` - full https://ui.nuxt.com/ via `@nuxt/ui` connector module **[RECOMMENDED]**
 - `tailwind` - only https://tailwindcss.com/ via `@nuxtjs/tailwindcss` connector module
-- `off` - no UI library
+- `off` - no UI library **[DEFAULT]**
 
 Set the value via `NUXT_PUBLIC_IGNIS_UI` env variable.
 
 ### Database
 It is possible to pick from three options:
-- `neon` - https://neon.tech/ via `nuxt-neon` connector module **[DEFAULT]**
+- `neon` - https://neon.tech/ via `nuxt-neon` connector module **[RECOMMENDED]**
 - `supabase` - https://supabase.com/ via `@nuxtjs/supabase` connector module
-- `off` - no database module
+- `off` - no database module **[DEFAULT]**
 
-Set the value via `NUXT_PUBLIC_IGNIS_DATABASE` env variable.
+Set the value via `NUXT_PUBLIC_IGNIS_DB` env variable.
 
 ### Optional modules
 Currently, following modules are opinionated:
-- `@formkit/nuxt` - set `NUXT_PUBLIC_MODULES_FORMKIT` to `true | false`
-- `@nuxt/content` - set `NUXT_PUBLIC_MODULES_CONTENT` to `true | false`
+- `@formkit/nuxt` - set `NUXT_PUBLIC_IGNIS_FORMKIT` to `true | false`
+- `@nuxt/content` - set `NUXT_PUBLIC_IGNIS_CONTENT` to `true | false`
 
 Default values are **false** (not included) for all optional modules.

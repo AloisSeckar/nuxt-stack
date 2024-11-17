@@ -20,10 +20,10 @@
       <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.ui')" />
       <AppFeature v-if="ui !== 'off'" :text="useNuxtApp().$i18n.t('features.tailwind')" />
       <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.icon')" />
-      <AppFeature v-if="database === 'supabase'" :text="useNuxtApp().$i18n.t('features.supabase')" />
-      <AppFeature v-if="database === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
-      <AppFeature v-if="modules.formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
-      <AppFeature v-if="modules.content" :text="useNuxtApp().$i18n.t('features.content')" />
+      <AppFeature v-if="db === 'supabase'" :text="useNuxtApp().$i18n.t('features.supabase')" />
+      <AppFeature v-if="db === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
+      <AppFeature v-if="formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
+      <AppFeature v-if="content" :text="useNuxtApp().$i18n.t('features.content')" />
     </div>
     <div class="link">
       <NuxtLink to="/second">
@@ -34,7 +34,9 @@
 </template>
 
 <script setup lang="ts">
-const modules = useRuntimeConfig().public.modules
-const ui = useRuntimeConfig().public.ignis.ui
-const database = useRuntimeConfig().public.ignis.database
+const setup = useRuntimeConfig().public.ignis
+const ui = setup.ui
+const db = setup.db
+const formkit = setup.formkit
+const content = setup.content
 </script>
