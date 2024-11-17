@@ -4,20 +4,6 @@
 
 This is a template starter for Nuxt web applicatons. It is being build as the setup I'd currently use to start with a new "real world" [Nuxt](https://nuxt.com/) webapp. It will improve and grow together with my skills. I also try to include **WHAT** and **WHY** comments based on my knowledge about the framework and used libraries.
 
-## Features
-- `pnpm` based project
-- Nuxt application framework atop Vue.js
-- Available as a standalone Nuxt layer package
-- VueUse for utility functions
-- Tailwind CSS for styling
-- NuxtImage to optimize use of images
-- nuxt/i18n for localization
-- Pinia for state management
-- Supabase or Neon DB services
-- FormKit for input forms
-- Icônes for providing SVG icons
-- ESLint via @nuxt/eslint for automatic code quality check
-
 ## How to use
 
 ### As standalone template
@@ -34,11 +20,35 @@ Aside from being "forked", `nuxt-ignis` is also available as a NPM package that 
 
 More info comming soon...
 
-## Related article
-https://master-coda.cz/article/nuxt-stack
+## Overview
+
+**Fundamentals**
+- [`pnpm`](https://pnpm.io/) based project
+- [Nuxt](https://nuxt.com/) application framework built atop [Vue.js](https://vuejs.org/)
+- Available as a template or standalone package
+
+**Built-in features**
+- [`nuxt-time`](https://nuxt.com/modules/time) - SSR-friendly component for rendering dynamic date/time
+- [`nuxt-security`](https://nuxt-security.vercel.app/) - zero-config OWASP security patterns for Nuxt
+- [`@nuxtjs/i18n`](https://i18n.nuxtjs.org/) - translations and internalization made easy
+- [`@nuxt/eslint`](https://nuxt.com/modules/eslint) - linting for maintaining coding standards and improving code quality 
+- [`@nuxt/image`](https://image.nuxt.com/) - handful tools for working with images
+- [`@pinia/nuxt`](https://pinia.vuejs.org/ssr/nuxt.html) - de-facto standard state management library for Vue apps - Pinia
+- [`@vueuse/nuxt`](https://vueuse.org/nuxt/README.html) - integration with utility functions library for Vue apps - VueUse
+
+**Configurable features**
+- UI (pick 0-1)
+  - **Nuxt UI** - UI component and CSS library
+  - **Tailwind CSS** - CSS library (included in Nuxt UI)
+- Database (pick 0-1)
+  - **Neon** - serverless PostgreSQL database 
+  - **Supabase** - serverless PostgreSQL database 
+- Other (opt-in)
+  - **FormKit** - for handling input forms
+  - **Content** - for working with website content in `.md` or `.json`
 
 ## Configuration
-It is possible to select which Nuxt modules will be activated in your project. For example, if you don't need database connectivity, you don't need to include a DB module and be forced to setup connection.
+It is possible to select which Nuxt modules will be activated in your project. All dependencies are being downloaded into local `node_modules`, but Nuxt build process will ensure only relevant packages will be bundled for production.
 
 ### UI
 It is possible to pick from three options:
