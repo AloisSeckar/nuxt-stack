@@ -32,7 +32,7 @@ const nuxtConfig = defu(nuxtModules, {
   },
 })
 
-// https://nuxt.com/docs/guide/directory-structure/nuxt.config
+// https://nuxt.com/docs/getting-started/configuration#nuxt-configuration
 // @ts-expect-error unknown object type
 // TODO elaborate correct type for "nuxtConfig" object
 export default defineNuxtConfig(nuxtConfig)

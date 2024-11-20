@@ -1,4 +1,4 @@
-// https://formkit.com/getting-started/installation#configuring-nuxt
+// https://formkit.com/guides/optimizing-for-production#using-the-nuxt-module
 import { en, de } from '@formkit/i18n'
 import type { DefaultConfigOptions } from '@formkit/vue'
 
