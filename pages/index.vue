@@ -7,7 +7,7 @@
 
 <template>
   <div>
-    <div class="features-list">
+    <div class="m-auto my-4 w-3/5 flex flex-col">
       <!-- an example of Nuxt components declared in `/components` directory -->
       <!-- the text is being loaded localized via nuxt/i18n module -->
       <AppFeature :text="useNuxtApp().$i18n.t('features.nuxt')" />

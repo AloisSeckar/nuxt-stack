@@ -1,4 +1,6 @@
-/*! this file is auto-imported when using Tailwind CSS */
+/* This file is auto-imported when using Tailwind CSS */
+/* Read more at: */
+/* https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply */
 
 @tailwind base;
 @tailwind components;
@@ -6,29 +8,24 @@
 
 @layer base {
 
+    /* Tailwind CSS classes might be auto-applied to all respective elements like this. */
+    /* However, I recommend NOT to use it like that, because this obsfucates code logic */
+    /* and makes maintaing harder (even you should soon forgot styles are defined here) */
+
+    /* For setting "body" tag attributes, it is better to use useHead() composable - @see `app.vue`*/
+    /*
     body {
         @apply bg-slate-900;
     }
-
-    h1 {
-        @apply mb-4 text-4xl text-amber-400 font-bold;
-    }
-
-    div {
-        @apply m-auto text-center text-white;
-    }
+    */
 
 }
 
 @layer components {
 
-    .features-list {
-        @apply m-auto my-4 w-3/5 flex flex-col;
-    }
-
-    .features {
-        @apply m-1 px-2 py-1 border border-amber-300 font-bold text-lg text-feature hover:bg-slate-700;
-    }
+    /* Following classes are available to use throughout the app as shorthands.  */
+    /* Although still discouraged by Tailwind CSS authors, this usage makes more */
+    /* sense, because the class name is visible and trackable in SFC templates.  */
 
     .link {
         @apply my-2 text-amber-400 hover:text-amber-200;

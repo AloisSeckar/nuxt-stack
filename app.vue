@@ -2,7 +2,7 @@
   <div class="p-3">
     <div class="ignis-header">
       <img src="/nuxt-ignis.png" class="ignis-logo" :title :alt>
-      <h1 class="ignis-title">
+      <h1 class="my-4 text-4xl text-amber-400 font-bold">
         {{ $t("title") }}
       </h1>
       <img src="/nuxt-ignis.png" class="ignis-logo" :title :alt>
@@ -24,6 +24,9 @@ useHead({
   htmlAttrs: {
     lang: 'en',
   },
+  bodyAttrs: {
+    class: 'bg-slate-900 m-auto text-center text-white'
+  }
 })
 initConsola()
 log.info('Nuxt Ignis was here!')

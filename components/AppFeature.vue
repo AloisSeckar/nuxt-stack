@@ -13,7 +13,7 @@
 -->
 
 <template>
-  <div class="features">
+  <div class="m-1 px-2 py-1 border border-amber-300 font-bold text-lg text-feature hover:bg-slate-700">
     <!-- "double mustache" syntax to display JS expression inside HTML template -->
     <!-- notice you can call props directly in template section -->
     {{ text }}
