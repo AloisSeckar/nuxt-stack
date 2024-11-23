@@ -1,0 +1,15 @@
+/*
+  This will import Open Props CSS styles
+  https://open-props.style/
+
+  NUXT_PUBLIC_IGNIS_OPENPROPS=true required to use this feature
+*/
+
+@import "open-props/normalize";
+@import "open-props/buttons";
+
+.openprops-feature {
+  /* https://open-props.style/#gradients */
+  background: var(--gradient-18);
+  color: var(--gray-12);
+}

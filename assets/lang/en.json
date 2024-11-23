@@ -18,6 +18,7 @@
         "supabase" : "Supabase for auth and DB services",
         "neon" : "Neon for DB services",
         "formkit" : "FormKit for input forms",
-        "content" : "Nuxt Content for creating and editing content"
+        "content" : "Nuxt Content for creating and editing content",
+        "openprops" : "Additional CSS by Open Props"
     }
 }

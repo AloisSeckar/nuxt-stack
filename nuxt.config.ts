@@ -24,6 +24,7 @@ const nuxtConfig = defu(nuxtModules, {
         db: 'off', // neon/supabase/off
         formkit: false, // true/false
         content: false, // true/false
+        openprops: false, // true/false
       },
 
       // logging

@@ -24,6 +24,7 @@
       <AppFeature v-if="db === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
       <AppFeature v-if="formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
       <AppFeature v-if="content" :text="useNuxtApp().$i18n.t('features.content')" />
+      <AppFeature v-if="content" class="openprops-feature" :text="useNuxtApp().$i18n.t('features.openprops')" />
     </div>
     <div class="link">
       <NuxtLink to="/second">
@@ -39,4 +40,5 @@ const ui = setup.ui
 const db = setup.db
 const formkit = setup.formkit
 const content = setup.content
+const openprops = setup.openprops
 </script>

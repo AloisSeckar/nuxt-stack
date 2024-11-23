@@ -1,10 +1,12 @@
 import { defu } from 'defu'
 import { log } from './utils/consola'
+import OpenProps from 'open-props'
 
 export function setModules() {
   let moduleConfig = {
     modules: [] as string[],
   }
+  let features = ''
 
   // 1. default modules
   moduleConfig.modules.push(
@@ -65,8 +67,24 @@ export function setModules() {
     moduleConfig.modules.push('@nuxt/content')
   }
 
+  // Open Props CSS
+  if (process.env.NUXT_PUBLIC_IGNIS_OPENPROPS === 'true') {
+    features += 'Open Props CSS'
+    moduleConfig = defu({
+      // import Open Prpops stylesheet
+      css: ['~/assets/css/open-props.css'],
+      // CSS processor for Open Props
+      postcss: {
+        plugins: {
+          'postcss-jit-props': OpenProps,
+        },
+      },
+    }, moduleConfig)
+  }
+
   log.info('Nuxt Ignis will start using following module config:')
   log.info(moduleConfig)
+  log.info(features)
 
   return moduleConfig
 }

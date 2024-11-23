@@ -46,6 +46,7 @@ More info comming soon...
 - Other (opt-in)
   - **FormKit** - for handling input forms
   - **Content** - for working with website content in `.md` or `.json`
+  - **Open Props** - for extra CSS by [Open Props](https://open-props.style/)
 
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. All dependencies are being downloaded into local `node_modules`, but Nuxt build process will ensure only relevant packages will be bundled for production.
@@ -72,3 +73,9 @@ Currently, following modules are opinionated:
 - `@nuxt/content` - set `NUXT_PUBLIC_IGNIS_CONTENT` to `true | false`
 
 Default values are **false** (not included) for all optional modules.
+
+### Optional features
+Currently, following extra features (not using separate Nuxt Modules) are opinionated:
+- `Open Props CSS` - set `NUXT_PUBLIC_IGNIS_OPENPROPS` to `true | false`
+
+Default values are **false** (not included) for all optional features.
