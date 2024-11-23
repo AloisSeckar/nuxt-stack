@@ -1,9 +1,9 @@
 import { defu } from 'defu'
-import { setModules } from './modules'
+import { setFeatures } from './features'
 
-const nuxtModules = setModules()
+const ignisFeatures = setFeatures()
 
-const nuxtConfig = defu(nuxtModules, {
+const nuxtConfig = defu(ignisFeatures, {
   compatibilityDate: '2024-11-11',
   eslint: {
     // simple eslint config - see eslint.config.mjs

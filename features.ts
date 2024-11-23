@@ -2,75 +2,79 @@ import { defu } from 'defu'
 import { log } from './utils/consola'
 import OpenProps from 'open-props'
 
-export function setModules() {
-  let moduleConfig = {
+export function setFeatures() {
+  // list of optional extra features
+  let extras = [] as string[]
+
+  // object for optional config that will be merged with global Nuxt config
+  // declared in nuxt.config.ts
+  let nuxtConfig = {
     modules: [] as string[],
   }
-  let features = ''
 
-  // 1. default modules
-  moduleConfig.modules.push(
-    'nuxt-time',
-    'nuxt-security',
-    '@nuxtjs/i18n',
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
+  // 1. default modules (mandatory)
+  nuxtConfig.modules.push(
+      'nuxt-time',
+      'nuxt-security',
+      '@nuxtjs/i18n',
+      '@nuxt/eslint',
+      '@nuxt/image',
+      '@pinia/nuxt',
+      '@vueuse/nuxt',
   )
 
   // 2. optional modules
 
   // ui
   if (process.env.NUXT_PUBLIC_IGNIS_UI === 'nuxt-ui') {
-    moduleConfig.modules.push('@nuxt/ui')
+    nuxtConfig.modules.push('@nuxt/ui')
   }
   else {
     // remove @nuxt/ui-specific components from resolution
     // if module is not used
-    moduleConfig = defu({
+    nuxtConfig = defu({
       vue: {
         compilerOptions: {
           isCustomElement: (tag: string) => tag === 'Icon',
         },
       },
-    }, moduleConfig)
+    }, nuxtConfig)
 
     // evaluate separate Tailwind CSS module
     if (process.env.NUXT_PUBLIC_IGNIS_UI === 'tailwind') {
-      moduleConfig.modules.push('@nuxtjs/tailwindcss')
+      nuxtConfig.modules.push('@nuxtjs/tailwindcss')
     }
   }
 
   // database
   if (process.env.NUXT_PUBLIC_IGNIS_DB === 'supabase') {
     // module definition
-    moduleConfig.modules.push('@nuxtjs/supabase')
+    nuxtConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
-    moduleConfig = defu({
+    nuxtConfig = defu({
       supabase: {
         redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
       },
-    }, moduleConfig)
+    }, nuxtConfig)
   } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
     // module definition
-    moduleConfig.modules.push('nuxt-neon')
+    nuxtConfig.modules.push('nuxt-neon')
   }
 
   // formkit
   if (process.env.NUXT_PUBLIC_IGNIS_FORMKIT === 'true') {
-    moduleConfig.modules.push('@formkit/nuxt')
+    nuxtConfig.modules.push('@formkit/nuxt')
   }
 
   // content
   if (process.env.NUXT_PUBLIC_IGNIS_CONTENT === 'true') {
-    moduleConfig.modules.push('@nuxt/content')
+    nuxtConfig.modules.push('@nuxt/content')
   }
 
   // Open Props CSS
   if (process.env.NUXT_PUBLIC_IGNIS_OPENPROPS === 'true') {
-    features += 'Open Props CSS'
-    moduleConfig = defu({
+    extras.push('Open Props CSS')
+    nuxtConfig = defu({
       // import Open Prpops stylesheet
       css: ['~/assets/css/open-props.css'],
       // CSS processor for Open Props
@@ -79,12 +83,15 @@ export function setModules() {
           'postcss-jit-props': OpenProps,
         },
       },
-    }, moduleConfig)
+    }, nuxtConfig)
   }
 
-  log.info('Nuxt Ignis will start using following module config:')
-  log.info(moduleConfig)
-  log.info(features)
+  let overview = 'Nuxt Ignis will start using following settings:\n'
+  overview += 'Modules: ' + nuxtConfig.modules.join(', ') + "\n"
+  if (extras.length > 0) {
+    overview += 'Extras: ' + extras.join(', ') + "\n"
+  }
+  log.info(overview)
 
-  return moduleConfig
+  return nuxtConfig
 }
