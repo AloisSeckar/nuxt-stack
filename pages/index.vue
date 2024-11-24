@@ -10,21 +10,21 @@
     <div class="m-auto my-4 w-3/5 flex flex-col">
       <!-- an example of Nuxt components declared in `/components` directory -->
       <!-- the text is being loaded localized via nuxt/i18n module -->
-      <AppFeature :text="useNuxtApp().$i18n.t('features.nuxt')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.security')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.image')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.pinia')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.vueuse')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.i18n')" />
-      <AppFeature :text="useNuxtApp().$i18n.t('features.consola')" />
-      <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.ui')" />
-      <AppFeature v-if="ui !== 'off'" :text="useNuxtApp().$i18n.t('features.tailwind')" />
-      <AppFeature v-if="ui === 'nuxt-ui'" :text="useNuxtApp().$i18n.t('features.icon')" />
-      <AppFeature v-if="db === 'supabase'" :text="useNuxtApp().$i18n.t('features.supabase')" />
-      <AppFeature v-if="db === 'neon'" :text="useNuxtApp().$i18n.t('features.neon')" />
-      <AppFeature v-if="formkit" :text="useNuxtApp().$i18n.t('features.formkit')" />
-      <AppFeature v-if="content" :text="useNuxtApp().$i18n.t('features.content')" />
-      <AppFeature v-if="content" class="openprops-feature" :text="useNuxtApp().$i18n.t('features.openprops')" />
+      <AppFeature :text="$t('features.nuxt')" />
+      <AppFeature :text="$t('features.security')" />
+      <AppFeature :text="$t('features.image')" />
+      <AppFeature :text="$t('features.pinia')" />
+      <AppFeature :text="$t('features.vueuse')" />
+      <AppFeature :text="$t('features.i18n')" />
+      <AppFeature :text="$t('features.consola')" />
+      <AppFeature v-if="ui === 'nuxt-ui'" :text="$t('features.ui')" />
+      <AppFeature v-if="ui !== 'off'" :text="$t('features.tailwind')" />
+      <AppFeature v-if="ui === 'nuxt-ui'" :text="$t('features.icon')" />
+      <AppFeature v-if="db === 'supabase'" :text="$t('features.supabase')" />
+      <AppFeature v-if="db === 'neon'" :text="$t('features.neon')" />
+      <AppFeature v-if="formkit" :text="$t('features.formkit')" />
+      <AppFeature v-if="content" :text="$t('features.content')" />
+      <AppFeature v-if="content" class="openprops-feature" :text="$t('features.openprops')" />
     </div>
     <div class="link">
       <NuxtLink to="/second">

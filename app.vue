@@ -30,7 +30,7 @@ useHead({
 })
 initConsola()
 log.info('Nuxt Ignis was here!')
-const title = useNuxtApp().$i18n.t('title')
+const title = useT('title')
 const alt = title
 </script>
 
