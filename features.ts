@@ -46,7 +46,10 @@ export function setFeatures() {
   }
 
   // database
-  if (process.env.NUXT_PUBLIC_IGNIS_DB === 'supabase') {
+  if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
+    // module definition
+    nuxtConfig.modules.push('nuxt-neon')
+  } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'supabase') {
     // module definition
     nuxtConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
@@ -55,9 +58,6 @@ export function setFeatures() {
         redirect: false, // https://github.com/supabase/supabase/issues/16551#issuecomment-1685300935
       },
     }, nuxtConfig)
-  } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
-    // module definition
-    nuxtConfig.modules.push('nuxt-neon')
   }
 
   // i18n
