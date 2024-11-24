@@ -30,7 +30,6 @@ More info comming soon...
 **Built-in features**
 - [`nuxt-time`](https://nuxt.com/modules/time) - SSR-friendly component for rendering dynamic date/time
 - [`nuxt-security`](https://nuxt-security.vercel.app/) - zero-config OWASP security patterns for Nuxt
-- [`@nuxtjs/i18n`](https://i18n.nuxtjs.org/) - translations and internalization made easy
 - [`@nuxt/eslint`](https://nuxt.com/modules/eslint) - linting for maintaining coding standards and improving code quality 
 - [`@nuxt/image`](https://image.nuxt.com/) - handful tools for working with images
 - [`@pinia/nuxt`](https://pinia.vuejs.org/ssr/nuxt.html) - de-facto standard state management library for Vue apps - Pinia
@@ -44,6 +43,7 @@ More info comming soon...
   - **Neon** - serverless PostgreSQL database 
   - **Supabase** - serverless PostgreSQL database 
 - Other (opt-in)
+  - **I18N** - translations and internalization made easy
   - **FormKit** - for handling input forms
   - **Content** - for working with website content in `.md` or `.json`
   - **Open Props** - for extra CSS by [Open Props](https://open-props.style/)
@@ -69,6 +69,7 @@ Set the value via `NUXT_PUBLIC_IGNIS_DB` env variable.
 
 ### Optional modules
 Currently, following modules are opinionated:
+- `@nuxtjs/i18n` - set `NUXT_PUBLIC_IGNIS_I18N` to `true | false`
 - `@formkit/nuxt` - set `NUXT_PUBLIC_IGNIS_FORMKIT` to `true | false`
 - `@nuxt/content` - set `NUXT_PUBLIC_IGNIS_CONTENT` to `true | false`
 

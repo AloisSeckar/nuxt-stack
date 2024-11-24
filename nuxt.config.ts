@@ -22,6 +22,7 @@ const nuxtConfig = defu(ignisFeatures, {
       ignis: {
         ui: 'off', // nuxt-ui/tailwind/off
         db: 'off', // neon/supabase/off
+        i18n: false, // true/false
         formkit: false, // true/false
         content: false, // true/false
         openprops: false, // true/false

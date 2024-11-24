@@ -3,11 +3,11 @@
     <div class="ignis-header">
       <img src="/nuxt-ignis.png" class="ignis-logo" :title :alt>
       <h1 class="my-4 text-4xl text-amber-400 font-bold">
-        {{ $t("title") }}
+        {{ useT("title") }}
       </h1>
       <img src="/nuxt-ignis.png" class="ignis-logo" :title :alt>
     </div>
-    <div>{{ $t("subtitle") }}</div>
+    <div>{{ useT("subtitle") }}</div>
     <NuxtPage />
     <CurrentTime />
     <div class="link text-xs">

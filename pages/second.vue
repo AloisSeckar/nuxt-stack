@@ -7,18 +7,18 @@
 <template>
   <div>
     <div class="m-4">
-      {{ $t("page2") }}
+      {{ useT("page2") }}
     </div>
     <div class="m-4 flex flex-col items-center">
       <!-- special component for displaying images with NuxtImage -->
       <NuxtImg src="/unsplash.jpg" width="400" />
       <div class="text-xs">
-        Image by Unsplash displayed with <strong>Nuxt Image</strong>
+        {{ useT("image") }}
       </div>
     </div>
     <div class="link">
       <NuxtLink to="/">
-        {{ $t("goto1") }}
+        {{ useT("goto1") }}
       </NuxtLink>
     </div>
   </div>

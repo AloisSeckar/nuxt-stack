@@ -16,7 +16,6 @@ export function setFeatures() {
   nuxtConfig.modules.push(
       'nuxt-time',
       'nuxt-security',
-      '@nuxtjs/i18n',
       '@nuxt/eslint',
       '@nuxt/image',
       '@pinia/nuxt',
@@ -59,6 +58,11 @@ export function setFeatures() {
   } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
     // module definition
     nuxtConfig.modules.push('nuxt-neon')
+  }
+
+  // i18n
+  if (process.env.NUXT_PUBLIC_IGNIS_I18N === 'true') {
+    nuxtConfig.modules.push('@nuxtjs/i18n')
   }
 
   // formkit
