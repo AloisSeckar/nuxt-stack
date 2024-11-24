@@ -28,25 +28,25 @@ More info comming soon...
 - Available as a template or standalone package
 
 **Built-in features**
-- [`nuxt-time`](https://nuxt.com/modules/time) - SSR-friendly component for rendering dynamic date/time
-- [`nuxt-security`](https://nuxt-security.vercel.app/) - zero-config OWASP security patterns for Nuxt
-- [`@nuxt/eslint`](https://nuxt.com/modules/eslint) - linting for maintaining coding standards and improving code quality 
-- [`@nuxt/image`](https://image.nuxt.com/) - handful tools for working with images
-- [`@pinia/nuxt`](https://pinia.vuejs.org/ssr/nuxt.html) - de-facto standard state management library for Vue apps - Pinia
-- [`@vueuse/nuxt`](https://vueuse.org/nuxt/README.html) - integration with utility functions library for Vue apps - VueUse
+- linting for maintaining coding standards and improving code quality via [`@nuxt/eslint`](https://nuxt.com/modules/eslint) 
+- zero-config OWASP security patterns for Nuxt via [`nuxt-security`](https://nuxt-security.vercel.app/)
+- de-facto standard state management library for Vue apps via [`@pinia/nuxt`](https://pinia.vuejs.org/ssr/nuxt.html)
+- integration with utility functions library for Vue apps via [`@vueuse/nuxt`](https://vueuse.org/nuxt/README.html)
+- handful tools for working with images via [`@nuxt/image`](https://image.nuxt.com/) 
+- SSR-friendly component for rendering dynamic date/time via [`nuxt-time`](https://nuxt.com/modules/time)
 
 **Configurable features**
 - UI (pick 0-1)
-  - **Nuxt UI** - UI component and CSS library
-  - **Tailwind CSS** - CSS library (included in Nuxt UI)
+  - **Nuxt UI** - UI component and CSS library via [`@nuxt/ui`](https://ui.nuxt.com/) 
+  - **Tailwind CSS** - CSS library (included in Nuxt UI) via [`@nuxtjs/tailwindcss`](https://tailwindcss.nuxtjs.org/) 
 - Database (pick 0-1)
-  - **Neon** - serverless PostgreSQL database 
-  - **Supabase** - serverless PostgreSQL database 
+  - **Neon** - serverless PostgreSQL database via [`nuxt-neon`](https://github.com/AloisSeckar/nuxt-neon/) 
+  - **Supabase** - serverless PostgreSQL database via [`@nuxtjs/supabase`](https://supabase.nuxtjs.org/) 
 - Other (opt-in)
-  - **I18N** - translations and internalization made easy
-  - **FormKit** - for handling input forms
-  - **Content** - for working with website content in `.md` or `.json`
-  - **Open Props** - for extra CSS by [Open Props](https://open-props.style/)
+  - **I18N** - translations and internalization made easy via [`@nuxtjs/i18n`](hhttps://i18n.nuxtjs.org/) 
+  - **FormKit** - for handling input forms via [`@formkit/nuxt`](https://nuxt.com/modules/formkit) 
+  - **Content** - for working with website content in `.md` or `.json` via [`@nuxt/content`](https://content.nuxt.com/) 
+  - **Open Props** - extra CSS styles via [Open Props](https://open-props.style/)
 
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. All dependencies are being downloaded into local `node_modules`, but Nuxt build process will ensure only relevant packages will be bundled for production.
