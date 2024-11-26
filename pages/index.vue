@@ -24,7 +24,7 @@
       <AppFeature v-if="i18n" :text="useT('features.i18n')" />
       <AppFeature v-if="formkit" :text="useT('features.formkit')" />
       <AppFeature v-if="content" :text="useT('features.content')" />
-      <AppFeature v-if="content" class="openprops-feature" :text="useT('features.openprops')" />
+      <AppFeature v-if="openprops" class="openprops-feature" :text="useT('features.openprops')" />
     </div>
     <div class="link">
       <NuxtLink to="/second">
