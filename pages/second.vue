@@ -1,7 +1,10 @@
 <!--
     https://nuxt.com/docs/guide/directory-structure/pages
 
-    This page appears under `/second`
+    This page appears under URL `/second`
+
+    NuxtImg
+    - special component for displaying images with NuxtImage module
 -->
 
 <template>
@@ -10,7 +13,6 @@
       {{ useT("page2") }}
     </div>
     <div class="m-4 flex flex-col items-center">
-      <!-- special component for displaying images with NuxtImage -->
       <NuxtImg src="/unsplash.jpg" width="400" />
       <div class="text-xs">
         {{ useT("image") }}

@@ -1,3 +1,5 @@
+import lang from '@/assets/lang/en.json'
+
 /**
  * An adapter above `t` function from `i18n` module.
  * 
@@ -11,9 +13,6 @@
  * @param key identifier of text that should be displayed
  * @returns translated text from i18n sources
  */
-
-import lang from '@/assets/lang/en.json'
-
 export function useT(key: string): string {
   if (useRuntimeConfig().public.ignis.i18n) {
     // i18n available => just use it
@@ -31,6 +30,7 @@ export function useT(key: string): string {
   }
 }
 
+/** AI-generated helper to search a value for given key in JSON lang file. */
 function searchLang(key: string): unknown {
     const keys = key.split(".")
 

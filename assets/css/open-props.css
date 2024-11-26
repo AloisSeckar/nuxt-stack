@@ -2,14 +2,19 @@
   This will import Open Props CSS styles
   https://open-props.style/
 
-  NUXT_PUBLIC_IGNIS_OPENPROPS=true required to use this feature
+  NUXT_PUBLIC_IGNIS_OPENPROPS=true is required to use this feature
 */
 
 @import "open-props/normalize";
 @import "open-props/buttons";
 
+/* demo class - used in AppFeature component instance */
 .openprops-feature {
+
   /* https://open-props.style/#gradients */
   background: var(--gradient-18);
+
+  /* https://open-props.style/#colors */
   color: var(--gray-12);
+  
 }

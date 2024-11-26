@@ -2,14 +2,20 @@
     https://nuxt.com/docs/guide/directory-structure/pages
 
     An example of Nuxt page.
-    Nuxt automaticaly provides routing and displays this page when user visits root URL.
+    Nuxt automaticaly provides routing and displays this page when user visits root URL or `/index`.
+
+    AppFeature
+     - an example usage of auto-imported Nuxt component declared in `/components` directory
+     - the text is (usually) being loaded localized via nuxtjs/i18n module
+     - features are being displayed conditionally according to current setting
+    
+    NuxtLink
+     - special component for improved handling for HTML links (<a> tags)
 -->
 
 <template>
   <div>
     <div class="m-auto my-4 w-3/5 flex flex-col">
-      <!-- an example of Nuxt components declared in `/components` directory -->
-      <!-- the text is being loaded localized via nuxt/i18n module -->
       <AppFeature :text="useT('features.nuxt')" />
       <AppFeature :text="useT('features.security')" />
       <AppFeature :text="useT('features.image')" />
