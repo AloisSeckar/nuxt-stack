@@ -12,8 +12,8 @@ export default withNuxt([
   // you can adjust or even turn off some rules if you cannot or don't want to satisfy them
   {
     rules: {
-    // default for this rule is "1", but I find it too restrictive
-    // https://eslint.vuejs.org/rules/max-attributes-per-line.html
+      // the default for this rule is "1", but I find it too restrictive
+      // https://eslint.vuejs.org/rules/max-attributes-per-line.html
       'vue/max-attributes-per-line': ['error', {
         singleline: {
           max: 4,
@@ -22,6 +22,18 @@ export default withNuxt([
           max: 3,
         },
       }],
+      // the default rule forces newline after "else"
+      // I prefer using "} else {" on single row
+      'vue/html-closing-bracket-newline': [
+        'error',
+        {
+          multiline: 'never',
+          selfClosingTag: {
+            multiline: 'never',
+          },
+        },
+      ],
+      '@stylistic/brace-style': 'off',
     },
   },
 
