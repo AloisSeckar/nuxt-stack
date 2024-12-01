@@ -35,12 +35,9 @@
     "open-props": "1.7.7",            
     "pinia": "2.2.8",
     "postcss-jit-props": "1.0.14",    
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "vue": "latest",
+    "vue-router": "latest"
   },
-  "pnpm": {
-    "overrides": {
-      "cookie": "^0.7.0",
-      "cross-spawn": "^7.0.5"
-    }
-  }
+  "packageManager": "pnpm@9.14.4"
 }

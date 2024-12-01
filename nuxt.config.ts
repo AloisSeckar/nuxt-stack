@@ -3,14 +3,20 @@ import { setFeatures } from './features'
 
 const ignisFeatures = setFeatures()
 
+// https://nuxt.com/docs/guide/directory-structure/nuxt-config
 const nuxtConfig = defu(ignisFeatures, {
-  compatibilityDate: '2024-11-11',
+
+  // https://nuxt.com/docs/api/nuxt-config#compatibilitydate
+  compatibilityDate: '2024-12-01',
+
+  // simple eslint config - see eslint.config.mjs
   eslint: {
-    // simple eslint config - see eslint.config.mjs
     config: {
       stylistic: true,
     },
   },
+  
+  // app configuration
   runtimeConfig: {
     // nitro-only secret env-like variables go here
     public: {
