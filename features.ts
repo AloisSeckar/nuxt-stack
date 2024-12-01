@@ -62,7 +62,16 @@ export function setFeatures() {
 
   // i18n
   if (process.env.NUXT_PUBLIC_IGNIS_I18N === 'true') {
+    // module definition
     nuxtConfig.modules.push('@nuxtjs/i18n')
+    // module-specific config key
+    nuxtConfig = defu({
+      i18n: {
+        vueI18n: './i18n.config.ts',
+        locales: ['en'],
+        defaultLocale: 'en',
+      },
+    }, nuxtConfig)
   }
 
   // formkit
