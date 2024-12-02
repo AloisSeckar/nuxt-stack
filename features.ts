@@ -1,10 +1,10 @@
 import { defu } from 'defu'
-import { log } from './utils/consola'
 import OpenProps from 'open-props'
+import { log } from './utils/consola'
 
 export function setFeatures() {
   // list of optional extra features
-  let extras = [] as string[]
+  const extras = [] as string[]
 
   // object for optional config that will be merged with global Nuxt config
   // declared in nuxt.config.ts
@@ -14,23 +14,22 @@ export function setFeatures() {
 
   // 1. default modules (mandatory)
   nuxtConfig.modules.push(
-      'nuxt-time',
-      'nuxt-security',
-      '@nuxt/eslint',
-      '@nuxt/image',
-      '@pinia/nuxt',
-      '@vueuse/nuxt',
+    'nuxt-time',
+    'nuxt-security',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
   )
 
   // 2. optional modules
 
   // ui
-  if (process.env.NUXT_PUBLIC_IGNIS_UI === 'nuxt-ui') {
+  const uiPreset = process.env.NUXT_PUBLIC_IGNIS_PRESET_UI
+  if (uiPreset === 'nuxt-ui' || (!uiPreset && process.env.NUXT_PUBLIC_IGNIS_UI === 'true')) {
     nuxtConfig.modules.push('@nuxt/ui')
-  }
-  else {
-    // remove @nuxt/ui-specific components from resolution
-    // if module is not used
+  } else {
+    // remove @nuxt/ui-specific components from resolution if module is not used
     nuxtConfig = defu({
       vue: {
         compilerOptions: {
@@ -40,16 +39,17 @@ export function setFeatures() {
     }, nuxtConfig)
 
     // evaluate separate Tailwind CSS module
-    if (process.env.NUXT_PUBLIC_IGNIS_UI === 'tailwind') {
+    if (uiPreset === 'tailwind' || (!uiPreset && process.env.NUXT_PUBLIC_IGNIS_TAILWIND === 'true')) {
       nuxtConfig.modules.push('@nuxtjs/tailwindcss')
     }
   }
 
   // database
-  if (process.env.NUXT_PUBLIC_IGNIS_DB === 'neon') {
+  const dbPreset = process.env.NUXT_PUBLIC_IGNIS_PRESET_DB
+  if (dbPreset === 'neon' || (!dbPreset && process.env.NUXT_PUBLIC_IGNIS_NEON === 'true')) {
     // module definition
     nuxtConfig.modules.push('nuxt-neon')
-  } else if (process.env.NUXT_PUBLIC_IGNIS_DB === 'supabase') {
+  } else if (dbPreset === 'supabase' || (!dbPreset && process.env.NUXT_PUBLIC_IGNIS_SUPABASE === 'true')) {
     // module definition
     nuxtConfig.modules.push('@nuxtjs/supabase')
     // module-specific config key
@@ -100,9 +100,9 @@ export function setFeatures() {
   }
 
   let overview = 'Nuxt Ignis will start using following settings:\n'
-  overview += 'Modules: ' + nuxtConfig.modules.join(', ') + "\n"
+  overview += 'Modules: ' + nuxtConfig.modules.join(', ') + '\n'
   if (extras.length > 0) {
-    overview += 'Extras: ' + extras.join(', ') + "\n"
+    overview += 'Extras: ' + extras.join(', ') + '\n'
   }
   log.info(overview)
 

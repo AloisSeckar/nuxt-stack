@@ -15,7 +15,7 @@ const nuxtConfig = defu(ignisFeatures, {
       stylistic: true,
     },
   },
-  
+
   // app configuration
   runtimeConfig: {
     // nitro-only secret env-like variables go here
@@ -26,8 +26,15 @@ const nuxtConfig = defu(ignisFeatures, {
       // NOTE: due to static-like nature of nuxt.config.ts file
       // actual values MUST BE provided via .env file (or production equivalent)
       ignis: {
-        ui: 'off', // nuxt-ui/tailwind/off
-        db: 'off', // neon/supabase/off
+        preset: {
+          ui: 'off', // nuxt-ui/tailwind/off
+          db: 'off', // neon/supabase/off
+        },
+        // individual modules
+        ui: false, // true/false
+        tailwind: false, // true/false (ignored, if ui=true)
+        neon: false, // true/false
+        supabase: false, // true/false
         i18n: false, // true/false
         formkit: false, // true/false
         content: false, // true/false

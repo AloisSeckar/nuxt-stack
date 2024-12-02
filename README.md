@@ -51,24 +51,32 @@ More info comming soon...
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. All dependencies are being downloaded into local `node_modules`, but Nuxt build process will ensure only relevant packages will be bundled for production.
 
-### UI
+### UI preset
 It is possible to pick from three options:
 - `nuxt-ui` - full https://ui.nuxt.com/ via `@nuxt/ui` connector module **[RECOMMENDED]**
 - `tailwind` - only https://tailwindcss.com/ via `@nuxtjs/tailwindcss` connector module
-- `off` - no UI library **[DEFAULT]**
+- `off` - no UI library preset **[DEFAULT]**
 
-Set the value via `NUXT_PUBLIC_IGNIS_UI` env variable.
+Set the value via `NUXT_PUBLIC_IGNIS_PRESET_UI` env variable.
 
-### Database
+Value other than `off` will override Optional modules setting.
+
+### Database preset
 It is possible to pick from three options:
 - `neon` - https://neon.tech/ via `nuxt-neon` connector module **[RECOMMENDED]**
 - `supabase` - https://supabase.com/ via `@nuxtjs/supabase` connector module
-- `off` - no database module **[DEFAULT]**
+- `off` - no database module preset **[DEFAULT]**
 
-Set the value via `NUXT_PUBLIC_IGNIS_DB` env variable.
+Set the value via `NUXT_PUBLIC_IGNIS_DB_PRESET` env variable.
+
+Value other than `off` will override Optional modules setting.
 
 ### Optional modules
 Currently, following modules are opinionated:
+- `@nuxt/ui` - set `NUXT_PUBLIC_IGNIS_UI` to `true | false`
+- `@nuxtjs/tailwindcss` - set `NUXT_PUBLIC_IGNIS_TAILWIND` to `true | false` (ignored if `NUXT_PUBLIC_IGNIS_UI=true`)
+- `nuxt-neon` - set `NUXT_PUBLIC_IGNIS_NEON` to `true | false`
+- `@nuxtjs/supabase` - set `NUXT_PUBLIC_IGNIS_SUPABASE` to `true | false`
 - `@nuxtjs/i18n` - set `NUXT_PUBLIC_IGNIS_I18N` to `true | false`
 - `@formkit/nuxt` - set `NUXT_PUBLIC_IGNIS_FORMKIT` to `true | false`
 - `@nuxt/content` - set `NUXT_PUBLIC_IGNIS_CONTENT` to `true | false`
