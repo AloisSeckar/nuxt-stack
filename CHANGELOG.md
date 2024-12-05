@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.3 (2024-12-05)
+- build: bump nuxt-neon to `0.2.4`
+
 ## 0.1.2 (2024-12-05)
 - fix: update package.json according to Nuxt docs
 
