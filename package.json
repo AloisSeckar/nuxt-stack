@@ -5,6 +5,7 @@
   "repository": "github:AloisSeckar/nuxt-ignis",
   "license": "MIT",
   "type": "module",
+  "main": "./nuxt.config.ts",
   "scripts": {
     "analyze": "nuxt analyze",
     "eslint": "eslint .",
@@ -28,7 +29,6 @@
     "@vueuse/nuxt": "12.0.0",
     "consola": "3.2.3",
     "defu": "6.1.4",
-    "nuxt": "3.14.1592",
     "nuxt-neon": "0.2.0",
     "nuxt-security": "2.1.5",
     "nuxt-time": "1.0.3",
@@ -38,6 +38,9 @@
     "typescript": "5.7.2",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "nuxt": "3.14.1592"
   },
   "packageManager": "pnpm@9.14.4"
 }
