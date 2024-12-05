@@ -29,7 +29,7 @@
     "@vueuse/nuxt": "12.0.0",
     "consola": "3.2.3",
     "defu": "6.1.4",
-    "nuxt-neon": "0.2.0",
+    "nuxt-neon": "0.2.4",
     "nuxt-security": "2.1.5",
     "nuxt-time": "1.0.3",
     "open-props": "1.7.7",            
