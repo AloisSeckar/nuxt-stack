@@ -67,7 +67,7 @@ It is possible to pick from three options:
 - `supabase` - https://supabase.com/ via `@nuxtjs/supabase` connector module
 - `off` - no database module preset **[DEFAULT]**
 
-Set the value via `NUXT_PUBLIC_IGNIS_DB_PRESET` env variable.
+Set the value via `NUXT_PUBLIC_IGNIS_PRESET_DB` env variable.
 
 Value other than `off` will override Optional modules setting.
 
