@@ -47,6 +47,9 @@ importers:
       defu:
         specifier: 6.1.4
         version: 6.1.4
+      elrh-pslo:
+        specifier: 1.1.6
+        version: 1.1.6
       nuxt-neon:
         specifier: 0.2.4
         version: 0.2.4(magicast@0.3.5)(rollup@4.28.0)
@@ -2312,6 +2315,9 @@ packages:
 
   electron-to-chromium@1.5.67:
     resolution: {integrity: sha512-nz88NNBsD7kQSAGGJyp8hS6xSPtWwqNogA0mjtc2nUYeEf3nURK9qpV18TuBdDmEDgVWotS8Wkzf+V52dSQ/LQ==}
+
+  elrh-pslo@1.1.6:
+    resolution: {integrity: sha512-DPPvTaMKRV5jFfi48jaFK5soJjB9ZiO2actXps4aT9r6+GGTN81Gi/nfcLeVlrq5hXIogxGbYANZl3It/Gxviw==}
 
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
@@ -7968,6 +7974,8 @@ snapshots:
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.67: {}
+
+  elrh-pslo@1.1.6: {}
 
   emoji-regex-xs@1.0.0: {}
 

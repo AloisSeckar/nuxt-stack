@@ -61,6 +61,7 @@ You are ready to build your next awesome project in Nuxt!
   - **FormKit** - for handling input forms via [`@formkit/nuxt`](https://nuxt.com/modules/formkit) 
   - **Content** - for working with website content in `.md` or `.json` via [`@nuxt/content`](https://content.nuxt.com/) 
   - **Open Props** - extra CSS styles via [Open Props](https://open-props.style/)
+  - **pslo** - treating single letter words at the end of line via [elrh-pslo](https://open-props.style/)
 
 ## Configuration
 It is possible to select which Nuxt modules will be activated in your project. All dependencies are being downloaded into local `node_modules`, but Nuxt build process will ensure only relevant packages will be bundled for production.
@@ -100,5 +101,11 @@ Default values are **false** (not included) for all optional modules.
 ### Optional features
 Currently, following extra features (not using separate Nuxt Modules) are opinionated:
 - `Open Props CSS` - set `NUXT_PUBLIC_IGNIS_OPENPROPS` to `true | false`
+- `elrh-pslo` - set `NUXT_PUBLIC_IGNIS_PSLO_ENABLED` to `true | false`
 
 Default values are **false** (not included) for all optional features.
+
+#### elrh-pslo options
+There are two config values for this feature:
+- `NUXT_PUBLIC_IGNIS_PSLO_ENABLED` - setting to true will allow utility function `pslo` to treat texts in your app
+- `NUXT_PUBLIC_IGNIS_PSLO_CONTENT` - if both `elrh-pslo` and `@nuxt/content` are enabled, this allows or disallows Markdown content pre-processing with `pslo` function

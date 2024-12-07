@@ -39,6 +39,10 @@ const nuxtConfig = defu(ignisFeatures, {
         formkit: false, // true/false
         content: false, // true/false
         openprops: false, // true/false
+        pslo: {
+          enabled: false, // true/false (elrh-pslo will (not) be used)
+          content: false, // true/false (elrh-pslo will (not) be aplied on nuxt-content)
+        },
       },
 
       // logging

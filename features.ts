@@ -99,6 +99,11 @@ export function setFeatures() {
     }, nuxtConfig)
   }
 
+  // elrh-pslo
+  if (process.env.NUXT_PUBLIC_IGNIS_PSLO_ENABLED === 'true') {
+    extras.push('elrh-pslo')
+  }
+
   let overview = 'Nuxt Ignis will start using following settings:\n'
   overview += 'Modules: ' + nuxtConfig.modules.join(', ') + '\n'
   if (extras.length > 0) {
