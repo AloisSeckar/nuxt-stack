@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 (2024-12-07)
+- feat: include `elrh-pslo` text utility
+- docs: add instructions for using as a layer
+
 ## 0.1.3 (2024-12-05)
 - build: bump nuxt-neon to `0.2.4`
 
