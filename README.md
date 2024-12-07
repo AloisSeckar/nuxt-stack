@@ -13,19 +13,33 @@ This is a template starter for Nuxt web applicatons. It is being build as the se
 4. Start dev server with `pnpm dev` command
 5. Visit `localhost:3000` in browser
 
-You are ready to build your next awesome project in Nuxt.
+You are ready to build your next awesome project in Nuxt!
 
-### As a layer
-Aside from being "forked", `nuxt-ignis` is also available as a NPM package that can be referenced as a single-import dependency with all the features incomming.
+### As a layer (RECOMMENDED)
+Aside from being "forked", `nuxt-ignis` is also available as [NPM package](https://www.npmjs.com/package/nuxt-ignis) that can be referenced as a single-import with all the features incomming.
 
-More info comming soon...
+1) Add following dependency into your `package.json`:
+```
+"nuxt-ignis": "0.1.3"
+```
+
+2) Add following section into your `nuxt.config.ts`:
+```
+extends: [
+  `nuxt-ignis`
+]
+```
+
+3) Setup your `.env` to fit your project needs. Check [Configuration](#Configuration) section for reference.
+
+You are ready to build your next awesome project in Nuxt!
 
 ## Overview
 
 **Fundamentals**
 - [`pnpm`](https://pnpm.io/) based project
 - [Nuxt](https://nuxt.com/) application framework built atop [Vue.js](https://vuejs.org/)
-- Available as a template or standalone package
+- Available as a starter template or standalone NPM package to extend from
 
 **Built-in features**
 - linting for maintaining coding standards and improving code quality via [`@nuxt/eslint`](https://nuxt.com/modules/eslint) 
