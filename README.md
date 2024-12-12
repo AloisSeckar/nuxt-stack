@@ -26,13 +26,27 @@ Aside from being "forked", `nuxt-ignis` is also available as [NPM package](https
 2) Add following section into your `nuxt.config.ts`:
 ```
 extends: [
-  `nuxt-ignis`
+  'nuxt-ignis'
 ]
 ```
 
-3) Setup your `.env` to fit your project needs. Check [Configuration](#Configuration) section for reference.
+3) Add `.npmrc` file with following content (if you don't have it yet):
+```
+shamefully-hoist=true
+strict-peer-dependencies=false
+```
+
+4) Setup your `.env` to fit your project needs. Check [Configuration](#Configuration) section for reference.
 
 You are ready to build your next awesome project in Nuxt!
+
+#### Netlify deployment note
+If you use [Netlify](https://www.netlify.com/) for deployment then for some reasons [not yet clear to me](https://github.com/nuxt/nuxt/discussions/30187) after extending from Nuxt Ignis you have to add two explicit dependencies into your `package.json`, namely:
+```
+"vue": "latest",
+"vue-router": "latest"
+```
+Without this workaround the project builds and deploys but will hit runtime error 500 upon loading the page. Hopefully, this is just a temporary issue (12/2024).
 
 ## Overview
 
