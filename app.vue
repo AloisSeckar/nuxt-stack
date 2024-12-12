@@ -25,8 +25,8 @@ useHead({
     lang: 'en',
   },
   bodyAttrs: {
-    class: 'bg-slate-900 m-auto text-center text-white'
-  }
+    class: 'bg-slate-900 m-auto text-center text-white',
+  },
 })
 initConsola()
 log.info('Nuxt Ignis was here!')

@@ -35,9 +35,9 @@
  * Macro `defineProps()` comes from Vue.js API
  * (https://vuejs.org/api/sfc-script-setup.html#defineprops-defineemits).
  * This is how to pass variables inside components in Vue.
- * 
+ *
  * `required` - value has to be provided, otherwise an error will occur
- * 
+ *
  * `default` - will have this value, unless overwritten by caller
  */
 const props = defineProps({
