@@ -107,7 +107,7 @@ Currently, following modules are opinionated:
 - `nuxt-neon` - set `NUXT_PUBLIC_IGNIS_NEON` to `true | false`
 - `@nuxtjs/supabase` - set `NUXT_PUBLIC_IGNIS_SUPABASE` to `true | false`
 - `@nuxtjs/i18n` - set `NUXT_PUBLIC_IGNIS_I18N_ENABLED` to `true | false`
-- `@formkit/nuxt` - set `NUXT_PUBLIC_IGNIS_FORMKIT` to `true | false`
+- `@formkit/nuxt` - set `NUXT_PUBLIC_IGNIS_FORMKIT_ENABLED` to `true | false`
 - `@nuxt/content` - set `NUXT_PUBLIC_IGNIS_CONTENT` to `true | false`
 
 Default values are **false** (not included) for all optional modules.
@@ -115,6 +115,9 @@ Default values are **false** (not included) for all optional modules.
 #### I18N options
 - you can select default language locale via `NUXT_PUBLIC_IGNIS_I18N_LOCALE`
 - all `.json` files with messages in `@assets/lang` folder will be auto-scanned
+
+#### Formkit options
+- you can select default language locale via `NUXT_PUBLIC_IGNIS_I18N_LOCALE`
 
 ### Optional features
 Currently, following extra features (not using separate Nuxt Modules) are opinionated:

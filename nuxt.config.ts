@@ -26,6 +26,7 @@ const nuxtConfig = defu(ignisFeatures, {
       // NOTE: due to static-like nature of nuxt.config.ts file
       // actual values MUST BE provided via .env file (or production equivalent)
       ignis: {
+        // presets
         preset: {
           ui: 'off', // nuxt-ui/tailwind/off
           db: 'off', // neon/supabase/off
@@ -37,9 +38,12 @@ const nuxtConfig = defu(ignisFeatures, {
         supabase: false, // true/false
         i18n: {
           enabled: false, // true/false
-          default: 'en', // default locale
+          default: 'en', // default locale (should be same as formkit)
         },
-        formkit: false, // true/false
+        formkit: {
+          enabled: false, // true/false
+          default: 'en', // default locale (should be same as i18n)
+        },
         content: false, // true/false
         openprops: false, // true/false
         pslo: {

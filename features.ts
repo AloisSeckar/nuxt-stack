@@ -73,8 +73,16 @@ export function setFeatures() {
   }
 
   // formkit
-  if (process.env.NUXT_PUBLIC_IGNIS_FORMKIT === 'true') {
+  if (process.env.NUXT_PUBLIC_IGNIS_FORMKIT_ENABLED === 'true') {
+    // module definition
     nuxtConfig.modules.push('@formkit/nuxt')
+    // module-specific config key
+    nuxtConfig = defu({
+      formkit: {
+        autoImport: true,
+        configFile: './formkit.config.ts',
+      },
+    }, nuxtConfig)
   }
 
   // content

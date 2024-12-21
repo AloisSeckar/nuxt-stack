@@ -48,8 +48,8 @@ const nuxtui = ui === 'nuxt-ui' || setup.ui
 const tailwind = ui !== 'off' || setup.ui || setup.tailwind
 const neon = db === 'neon' || setup.neon
 const supabase = db === 'supabase' || setup.supabase
-const i18n = setup.i18n
-const formkit = setup.formkit
+const i18n = setup.i18n.enabled
+const formkit = setup.formkit.enabled
 const content = setup.content
 const openprops = setup.openprops
 </script>

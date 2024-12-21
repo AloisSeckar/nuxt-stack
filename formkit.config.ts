@@ -1,11 +1,12 @@
 // https://formkit.com/guides/optimizing-for-production#using-the-nuxt-module
-import { en, de } from '@formkit/i18n'
+import { en, de, cs } from '@formkit/i18n'
 import type { DefaultConfigOptions } from '@formkit/vue'
 
+const ignisLocale = process.env.NUXT_PUBLIC_IGNIS_FORMKIT_DEFAULT || 'en'
+
 const config: DefaultConfigOptions = {
-  // example of importing different message translations and set the default one
-  locales: { en, de },
-  locale: 'en',
+  locales: { en, de, cs }, // TODO allow multiple locales
+  locale: ignisLocale,
 }
 
 export default config
