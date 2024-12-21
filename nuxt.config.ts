@@ -39,10 +39,12 @@ const nuxtConfig = defu(ignisFeatures, {
         i18n: {
           enabled: false, // true/false
           default: 'en', // default locale (should be same as formkit)
+          config: './i18n.config.ts', // path to config file
         },
         formkit: {
           enabled: false, // true/false
           default: 'en', // default locale (should be same as i18n)
+          config: './formkit.config.ts', // path to config file
         },
         content: false, // true/false
         openprops: false, // true/false

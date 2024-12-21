@@ -67,7 +67,7 @@ export function setFeatures() {
     // module-specific config key
     nuxtConfig = defu({
       i18n: {
-        vueI18n: './i18n.config.ts',
+        vueI18n: process.env.NUXT_PUBLIC_IGNIS_I18N_CONFIG || './i18n.config.ts',
       },
     }, nuxtConfig)
   }
@@ -80,7 +80,7 @@ export function setFeatures() {
     nuxtConfig = defu({
       formkit: {
         autoImport: true,
-        configFile: './formkit.config.ts',
+        configFile: process.env.NUXT_PUBLIC_IGNIS_FORMKIT_CONFIG || './formkit.config.ts',
       },
     }, nuxtConfig)
   }
