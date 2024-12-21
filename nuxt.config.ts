@@ -35,7 +35,10 @@ const nuxtConfig = defu(ignisFeatures, {
         tailwind: false, // true/false (ignored, if ui=true)
         neon: false, // true/false
         supabase: false, // true/false
-        i18n: false, // true/false
+        i18n: {
+          enabled: false, // true/false
+          default: 'en', // default locale
+        },
         formkit: false, // true/false
         content: false, // true/false
         openprops: false, // true/false

@@ -14,7 +14,7 @@ import lang from '@/assets/lang/en.json'
  * @returns translated text from i18n sources
  */
 export function useT(key: string): string {
-  if (useRuntimeConfig().public.ignis.i18n) {
+  if (useRuntimeConfig().public.ignis.i18n.enabled) {
     // i18n available => just use it
     return useNuxtApp().$i18n.t(key)
   } else {
