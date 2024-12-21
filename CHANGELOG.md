@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5 (2024-12-21)
+- feat: more flexible config for `i18n` and `formkit`
+- docs: improved instructions for using as a layer
+
 ## 0.1.4 (2024-12-07)
 - feat: include `elrh-pslo` text utility
 - docs: add instructions for using as a layer
